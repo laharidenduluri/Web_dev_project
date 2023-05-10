@@ -1,0 +1,91 @@
+.closet__heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+    padding-right: 20px;
+    color: var(--primary-galactic);
+    align-items: center;
+}
+
+.action__button {
+    border: transparent;
+    color: var(--primary-galactic);
+    font-size: 30px;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.action__button:active {
+    transform: scale(0.90);
+}
+
+.items__container {
+    padding: 15px;
+}
+
+.item__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* FILTER BAR STYLING */
+.filterbar__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px 15px;
+    gap: 10px;
+    align-items: center;
+}
+
+.filterbar__list button {
+    background-color: transparent;
+}
+
+
+/* ITEM COMPONENT STYLING */
+.item__card {
+    border-radius: 8px;
+    padding: 14px 8px 10px;
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+    background-color: var(--primary-darkgreen);
+}
+
+.item__details {
+    height: 100px;
+}
+
+.item__card h2 {
+    margin: 0px 25px 0px 10px;
+    font-weight: 600;
+}
+
+.item__card p {
+    margin-left: 10px;
+}
+
+.item__image {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item__image img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.item__card .close__button {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--primary-tasman);
+}
